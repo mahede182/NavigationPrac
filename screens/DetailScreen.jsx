@@ -1,7 +1,7 @@
 import {View, Text, Button, StyleSheet} from 'react-native'
 
-const DetailsScreen = ({route, navigation })  => {
-  const { itemId, otherParam } = route.params;
+const DetailsScreen = ({navigation })  => {
+  // const { itemId, otherParam } = route.params;
     return (
       <View style={styles.DetailsScreen}>
         <Text>Details Screen</Text>
@@ -11,9 +11,9 @@ const DetailsScreen = ({route, navigation })  => {
         />
 
         {/* passing parameter to routes  */}
-      <Text>itemId: {JSON.stringify(itemId)}</Text>
-      <Text>otherParam: {JSON.stringify(otherParam)}</Text>
-      
+      {/* <Text>itemId: {JSON.stringify(itemId)}</Text>
+      <Text>otherParam: {JSON.stringify(otherParam)}</Text> */}
+
         <Button style={{padding: 10}} title="Go back" onPress={() => navigation.goBack()} />
       </View>
     );

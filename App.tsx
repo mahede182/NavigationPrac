@@ -45,7 +45,7 @@ function App(): JSX.Element {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      {/* <Stack.Navigator>
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
@@ -61,13 +61,13 @@ function App(): JSX.Element {
         component={ProfileScreen}
         />
         
-      </Stack.Navigator>
+      </Stack.Navigator> */}
 
-      {/* <Tab.Navigator>
+      <Tab.Navigator>
         <Tab.Screen name="HomeScreen" component={HomeScreen} />
         <Tab.Screen name="DetailScreen" component={DetailsScreen} />
         <Tab.Screen name= "ProfileScreen" component={ProfileScreen} />
-      </Tab.Navigator> */}
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

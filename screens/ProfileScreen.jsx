@@ -1,7 +1,7 @@
 import {View, Text, Button, StyleSheet} from 'react-native'
 // import { StyleSheet } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
-const ProfileScreen = ({route, navigation}) => {
+const ProfileScreen = ({navigation}) => {
     return (
       <View style={styles.ProfileScreen}>
         <Text>Profile Screen</Text>
