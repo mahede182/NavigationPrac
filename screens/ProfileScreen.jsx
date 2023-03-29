@@ -1,7 +1,7 @@
 import {View, Text, Button, StyleSheet} from 'react-native'
 // import { StyleSheet } from 'react-native/Libraries/StyleSheet/StyleSheet';
 
-const ProfileScreen = ({navigation}) => {
+const ProfileScreen = ({route, navigation}) => {
     return (
       <View style={styles.ProfileScreen}>
         <Text>Profile Screen</Text>
@@ -14,6 +14,7 @@ const ProfileScreen = ({navigation}) => {
         title="Go back to first screen in stack"
         onPress={() => navigation.popToTop()}
       />
+  
       </View>
     );
   };
