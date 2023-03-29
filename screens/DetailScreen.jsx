@@ -8,6 +8,7 @@ const DetailsScreen = ({ navigation })  => {
           title="Go to Profile"
           onPress={() => navigation.navigate('ProfileScreen')}
         />
+        <Button style={{padding: 10}} title="Go back" onPress={() => navigation.goBack()} />
       </View>
     );
   }

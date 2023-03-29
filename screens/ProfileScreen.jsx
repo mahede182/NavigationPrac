@@ -9,6 +9,11 @@ const ProfileScreen = ({navigation}) => {
           title="Go to Profile again ..."
           onPress={() => navigation.push('ProfileScreen')}
         />
+{/* alternative for go back */}
+        <Button
+        title="Go back to first screen in stack"
+        onPress={() => navigation.popToTop()}
+      />
       </View>
     );
   };
