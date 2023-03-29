@@ -5,8 +5,8 @@ const DetailsScreen = ({ navigation })  => {
       <View style={styles.DetailsScreen}>
         <Text>Details Screen</Text>
         <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate('HomeScreen')}
+          title="Go to Profile"
+          onPress={() => navigation.navigate('ProfileScreen')}
         />
       </View>
     );

@@ -7,6 +7,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // all screen are import here
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 import {
   SafeAreaView,
@@ -45,11 +46,17 @@ function App(): JSX.Element {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
+          options={{ title: 'Bit Software Solution Ltd' }}
         />
         <Stack.Screen
         name="DetailsScreen"
         component={DetailsScreen}
-      />
+        />
+        <Stack.Screen
+        name="ProfileScreen"
+        component={ProfileScreen}
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
